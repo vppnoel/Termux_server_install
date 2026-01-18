@@ -125,10 +125,10 @@ if [ ! -f "package.json" ]; then
   "name": "termux-server",
   "version": "1.0.0",
   "description": "Node.js server running on Termux",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "node src/app.js"
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
   },
   "keywords": ["termux", "server", "nodejs"],
   "author": "",
