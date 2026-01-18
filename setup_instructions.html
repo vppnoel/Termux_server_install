@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Termux Server Setup Guide</title>
+  </head>
+  <body>
+    <h1>Termux Server Setup</h1>
+    <h2>Prerequisites</h2>
+    <ul>
+      <li>Ensure that you have Termux installed on your Android device.</li>
+      <li>A stable internet connection.</li>
+    </ul>
+
+    <h2>Steps to Set Up the Server</h2>
+    <ol>
+      <li>
+        <strong>Update Termux Packages</strong>: Ensure all installed packages
+        are up-to-date.
+        <pre><code>pkg update && pkg upgrade</code></pre>
+      </li>
+      <li>
+        <strong>Install Required Packages</strong>: Install required packages
+        for the server.
+        <pre><code>pkg install python git</code></pre>
+      </li>
+      <li>
+        <strong>Clone Your Server Repository</strong>: Navigate and clone your server repository.
+        <pre><code>git clone https://github.com/your_username/your_repository.git</code></pre>
+      </li>
+      <li>
+        Navigate to the repository directory:
+        <pre><code>cd your_repository</code></pre>
+        Replace <code>your_repository</code> with your actual repository name.
+      </li>
+      <li>
+        <strong>Run the Server</strong>: Finally, start your server (adjust accordingly).
+        <pre><code>python server_script.py</code></pre>
+      </li>
+    </ol>
+
+    <h2>Notes</h2>
+    <ul>
+      <li>
+        For long-term running, consider using a terminal multiplexer like
+        <code>screen</code> or <code>tmux</code>.
+      </li>
+      <li>
+        Make sure to configure firewall rules if using non-default ports.
+      </li>
+    </ul>
+  </body>
+</html>
